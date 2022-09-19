@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="big-parent">
+      <div class="generator">
+        <h1 id="title">Password Generator</h1>
+        <div class="pass-bar">
+          <span class="pass" id="passwordC"></span>
+          <button id="copied"><i class="far fa-clipboard"></i></button>
+        </div>
+        <div class="all-p">
+          <div class="length-p">
+            <h3>Password length</h3>
+            <input type="number" id="length" value="15" min="2" max="30" />
+          </div>
+          <div class="uppercase-p">
+            <h3>Include uppercase letters</h3>
+            <input type="checkbox" id="uppercase" />
+          </div>
+          <div class="lowercase-p">
+            <h3>Include lowercase letters</h3>
+            <input type="checkbox" id="lowercase" />
+          </div>
+          <div class="numbers-p">
+            <h3>Include numbers</h3>
+            <input type="checkbox" id="numbers" />
+          </div>
+          <div class="symbols-p">
+            <h3>Include symbols</h3>
+            <input type="checkbox" id="symbols" />
+          </div>
+        </div>
+        <button id="gen-btn">Generate Password</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c0de0b8ef4.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
